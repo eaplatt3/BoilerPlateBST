@@ -8,25 +8,30 @@ namespace BoilerPlateBST
 {
     class BinarySearchTree
     {
+        //Creates Nodes on the tree to store data
         public class Node
         {
             public int data;
             public Node left;
             public Node right;
 
+            //Display data in a Node
             public void DisplayNode()
             {
                 Console.Write(data + " ");
             }
         }
 
+        //Creating the first node in the tree
         public Node root;
 
+        //Constructor
         public BinarySearchTree()
         {
             root = null;
         }
 
+        //Method to Insert data into the tree
         public void insert(int i)
         {
             Node newNode = new Node();
