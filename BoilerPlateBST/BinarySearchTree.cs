@@ -26,5 +26,36 @@ namespace BoilerPlateBST
         {
             root = null;
         }
+
+        public void insert(int i)
+        {
+            Node newNode = new Node();
+            newNode.data = i;
+            if(root == null)
+            {
+                root = newNode;
+            }
+
+            else
+            {
+                Node current = root;
+                Node parent;
+
+                while (true)
+                {
+                    parent = current;
+
+                    if(i < current.data)
+                    {
+                        current = current.left;
+                        if(current == null)
+                        {
+                            parent.left = newNode;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
