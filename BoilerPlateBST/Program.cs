@@ -10,6 +10,15 @@ namespace BoilerPlateBST
     {
         static void Main(string[] args)
         {
+            BinarySearchTree bst = new BinarySearchTree();
+
+            bst.insert(10);
+            bst.insert(9);
+            bst.insert(25);
+            bst.insert(30);
+            //TO DO: Get Print to Work
+           // bst.PrintAllNodes();
+            
         }
     }
 }

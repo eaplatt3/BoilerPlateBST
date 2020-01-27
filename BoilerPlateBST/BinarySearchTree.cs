@@ -72,5 +72,19 @@ namespace BoilerPlateBST
                 }
             }
         }
+
+        public void PrintAllNodes(Node root)
+        {
+            if(root != null)
+            {
+                PrintAllNodes(root.left);
+                if(root.left != null && root.right != null)
+                {
+                    Console.Write(root.data + " ");
+                }
+
+                PrintAllNodes(root.right);
+            }
+        }
     }
 }
